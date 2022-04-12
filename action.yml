@@ -1,0 +1,21 @@
+name: 'rcon-action'
+description: 'Send commands via RCON Protocol with GitHub actions'
+inputs:
+  server:
+    required: true
+    description: 'server address to connect to'
+  port:
+    required: false
+    description: 'server port to connect to'
+    default: '25575'
+  password:
+    required: false
+    description: 'rcon password'
+    default: 'password'
+  commands:
+    required: false
+    description: 'list of commands to execute'
+runs:
+  using: node16
+  main: src/index.js
+  
