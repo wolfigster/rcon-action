@@ -1,0 +1,24 @@
+{
+  "name": "rcon-action",
+  "version": "1.0.0",
+  "description": "Send commands via RCON Protocol with GitHub actions",
+  "license": "MIT",
+  "author": "Johannes Weis",
+  "main": "src/index.js",
+  "keywords": [
+    "github",
+    "actions",
+    "rcon"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfigster/rcon-action.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wolfigster/rcon-action/issues"
+  },
+  "homepage": "https://github.com/wolfigster/rcon-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0"
+  }
+}
