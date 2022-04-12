@@ -38,6 +38,13 @@ module.exports = class RCON {
    */
   end () {
     this.socket.end();
+    this.destroy();
+  }
+  /**
+   * Destroy the connection
+   */
+  destroy () {
+    this.socket.destroy();
   }
   /**
    * Immediately sends out as many queued packets as possible
