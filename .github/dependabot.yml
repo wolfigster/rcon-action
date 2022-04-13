@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # Fetch and update latest `github-actions` packages
+  - package-ecosystem: github-actions
+    directory: '/'
+    schedule:
+      interval: weekly
+      day: 'sunday'
+      time: '00:00'
+      timezone: 'Europe/Berlin'
+    open-pull-requests-limit: 10
+    reviewers:
+      - wolfigster
+    assignees:
+      - wolfigster
+    commit-message:
+      prefix: gha
+      prefix-development: gha-dev
+      include: scope
